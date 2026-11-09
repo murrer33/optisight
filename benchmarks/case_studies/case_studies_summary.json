@@ -1,0 +1,628 @@
+{
+  "case1_cold_brew_packaging": {
+    "title": "1. Soğuk Kahve Ambalajı (Perakende Rafı - 1.5m)",
+    "distance_meters": 1.5,
+    "package_width_cm": 14.0,
+    "before": {
+      "overall_attention_score": 6,
+      "focus_score": 16,
+      "clutter_score": 96,
+      "quadrant": "Sağ-Üst",
+      "aoi_results": [
+        {
+          "name": "Marka Logosu (ROAST CO)",
+          "aoi_type": "LOGO",
+          "rect": [
+            40,
+            35,
+            190,
+            65
+          ],
+          "is_text_or_cta": false,
+          "share": 1.2,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": null,
+          "wcag_grade": null,
+          "angular_height_deg": 0.39,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Fiyat Etiketi (89 TL)",
+          "aoi_type": "PRICE",
+          "rect": [
+            390,
+            40,
+            165,
+            65
+          ],
+          "is_text_or_cta": true,
+          "share": 3.4,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": 1.37,
+          "wcag_grade": "DÜŞÜK",
+          "angular_height_deg": 0.39,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Kampanya / CTA (%30 İNDİRİM)",
+          "aoi_type": "CTA",
+          "rect": [
+            180,
+            315,
+            240,
+            68
+          ],
+          "is_text_or_cta": true,
+          "share": 2.3,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": 1.37,
+          "wcag_grade": "DÜŞÜK",
+          "angular_height_deg": 0.41,
+          "legible_at_distance": true
+        }
+      ],
+      "fix_recommendations": [
+        "[Marka Algısı] 'Marka Logosu (ROAST CO)' dikkat payı düşük (%1.2, hedef ≥%5); Sol-Üst Altın Bölge'ye yaklaştırın veya kontrastını güçlendirin.",
+        "[Kontrast] 'Fiyat Etiketi (89 TL)' kontrastı 1.37:1, hedef ≥4.5:1 (Kritik <3.0:1) (zemin/yazı ton farkını artırın).",
+        "[Odak Yakalama] 'Fiyat Etiketi (89 TL)' ilk 4 sabitlenmeye giremedi (%3.4 pay, hedef ≥%8); sıcak renk kontrastı veya boşluk (whitespace) ekleyin.",
+        "[Kontrast] 'Kampanya / CTA (%30 İNDİRİM)' kontrastı 1.37:1, hedef ≥4.5:1 (Kritik <3.0:1) (zemin/yazı ton farkını artırın).",
+        "[Odak Yakalama] 'Kampanya / CTA (%30 İNDİRİM)' ilk 4 sabitlenmeye giremedi (%2.3 pay, hedef ≥%8); sıcak renk kontrastı veya boşluk (whitespace) ekleyin.",
+        "[Görsel Karmaşa] Karmaşa endeksi 96/100, hedef ≤45/100 (arka plan dokularını ve ikincil çerçeveleri sadeleştirin)."
+      ],
+      "report_png": "case1_cold_brew_packaging_before_report.png",
+      "report_pdf": "case1_cold_brew_packaging_before_report.pdf"
+    },
+    "after": {
+      "overall_attention_score": 80,
+      "focus_score": 74,
+      "clutter_score": 58,
+      "quadrant": "Sol-Üst (Altın Bölge)",
+      "aoi_results": [
+        {
+          "name": "Marka Logosu (ROAST CO)",
+          "aoi_type": "LOGO",
+          "rect": [
+            40,
+            35,
+            190,
+            65
+          ],
+          "is_text_or_cta": false,
+          "share": 18.8,
+          "fixation_rank": 1,
+          "ttff": "1. Sabitlenme",
+          "ttff_time": "Sıra #1",
+          "wcag_ratio": null,
+          "wcag_grade": null,
+          "angular_height_deg": 0.39,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Fiyat Etiketi (89 TL)",
+          "aoi_type": "PRICE",
+          "rect": [
+            390,
+            40,
+            165,
+            65
+          ],
+          "is_text_or_cta": true,
+          "share": 12.6,
+          "fixation_rank": 3,
+          "ttff": "3. Sabitlenme",
+          "ttff_time": "Sıra #3",
+          "wcag_ratio": 10.92,
+          "wcag_grade": "AAA",
+          "angular_height_deg": 0.39,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Kampanya / CTA (%30 İNDİRİM)",
+          "aoi_type": "CTA",
+          "rect": [
+            180,
+            315,
+            240,
+            68
+          ],
+          "is_text_or_cta": true,
+          "share": 19.1,
+          "fixation_rank": 4,
+          "ttff": "4. Sabitlenme",
+          "ttff_time": "Sıra #4",
+          "wcag_ratio": 8.32,
+          "wcag_grade": "AAA",
+          "angular_height_deg": 0.41,
+          "legible_at_distance": true
+        }
+      ],
+      "fix_recommendations": [
+        "[Görsel Karmaşa] Karmaşa endeksi 58/100, hedef ≤45/100 (arka plan dokularını ve ikincil çerçeveleri sadeleştirin)."
+      ],
+      "report_png": "case1_cold_brew_packaging_after_report.png",
+      "report_pdf": "case1_cold_brew_packaging_after_report.pdf"
+    },
+    "score_delta": 74,
+    "clutter_delta": -38,
+    "ab_winner": "A Varyantı",
+    "ab_share_before": 71.4,
+    "ab_share_after": 28.6,
+    "ab_battle_pdf": "case1_cold_brew_packaging_ab_battle.pdf"
+  },
+  "case2_sneaker_ecommerce_ad": {
+    "title": "2. E-Ticaret Spor Ayakkabı Bannerı (Masaüstü/Mobil - 0.6m)",
+    "distance_meters": 0.6,
+    "package_width_cm": 22.0,
+    "before": {
+      "overall_attention_score": 26,
+      "focus_score": 40,
+      "clutter_score": 77,
+      "quadrant": "Merkez Odak",
+      "aoi_results": [
+        {
+          "name": "Marka Logosu (AEROX)",
+          "aoi_type": "LOGO",
+          "rect": [
+            35,
+            30,
+            165,
+            58
+          ],
+          "is_text_or_cta": false,
+          "share": 2.0,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": null,
+          "wcag_grade": null,
+          "angular_height_deg": 1.28,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Fiyat Etiketi (1.499 TL)",
+          "aoi_type": "PRICE",
+          "rect": [
+            45,
+            195,
+            200,
+            62
+          ],
+          "is_text_or_cta": true,
+          "share": 3.4,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": 1.54,
+          "wcag_grade": "DÜŞÜK",
+          "angular_height_deg": 1.37,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Satın Al Butonu (SEPETE EKLE)",
+          "aoi_type": "CTA",
+          "rect": [
+            45,
+            285,
+            235,
+            68
+          ],
+          "is_text_or_cta": true,
+          "share": 3.7,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": 1.54,
+          "wcag_grade": "DÜŞÜK",
+          "angular_height_deg": 1.5,
+          "legible_at_distance": true
+        }
+      ],
+      "fix_recommendations": [
+        "[Marka Algısı] 'Marka Logosu (AEROX)' dikkat payı düşük (%2.0, hedef ≥%5); Sol-Üst Altın Bölge'ye yaklaştırın veya kontrastını güçlendirin.",
+        "[Kontrast] 'Fiyat Etiketi (1.499 TL)' kontrastı 1.54:1, hedef ≥4.5:1 (Kritik <3.0:1) (zemin/yazı ton farkını artırın).",
+        "[Odak Yakalama] 'Fiyat Etiketi (1.499 TL)' ilk 4 sabitlenmeye giremedi (%3.4 pay, hedef ≥%8); sıcak renk kontrastı veya boşluk (whitespace) ekleyin.",
+        "[Kontrast] 'Satın Al Butonu (SEPETE EKLE)' kontrastı 1.54:1, hedef ≥4.5:1 (Kritik <3.0:1) (zemin/yazı ton farkını artırın).",
+        "[Odak Yakalama] 'Satın Al Butonu (SEPETE EKLE)' ilk 4 sabitlenmeye giremedi (%3.7 pay, hedef ≥%8); sıcak renk kontrastı veya boşluk (whitespace) ekleyin.",
+        "[Görsel Karmaşa] Karmaşa endeksi 77/100, hedef ≤45/100 (arka plan dokularını ve ikincil çerçeveleri sadeleştirin)."
+      ],
+      "report_png": "case2_sneaker_ecommerce_ad_before_report.png",
+      "report_pdf": "case2_sneaker_ecommerce_ad_before_report.pdf"
+    },
+    "after": {
+      "overall_attention_score": 74,
+      "focus_score": 68,
+      "clutter_score": 54,
+      "quadrant": "Merkez Odak",
+      "aoi_results": [
+        {
+          "name": "Marka Logosu (AEROX)",
+          "aoi_type": "LOGO",
+          "rect": [
+            35,
+            30,
+            165,
+            58
+          ],
+          "is_text_or_cta": false,
+          "share": 12.6,
+          "fixation_rank": 2,
+          "ttff": "2. Sabitlenme",
+          "ttff_time": "Sıra #2",
+          "wcag_ratio": null,
+          "wcag_grade": null,
+          "angular_height_deg": 1.28,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Fiyat Etiketi (1.499 TL)",
+          "aoi_type": "PRICE",
+          "rect": [
+            45,
+            195,
+            200,
+            62
+          ],
+          "is_text_or_cta": true,
+          "share": 13.2,
+          "fixation_rank": 4,
+          "ttff": "4. Sabitlenme",
+          "ttff_time": "Sıra #4",
+          "wcag_ratio": 10.61,
+          "wcag_grade": "AAA",
+          "angular_height_deg": 1.37,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Satın Al Butonu (SEPETE EKLE)",
+          "aoi_type": "CTA",
+          "rect": [
+            45,
+            285,
+            235,
+            68
+          ],
+          "is_text_or_cta": true,
+          "share": 11.9,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": 7.88,
+          "wcag_grade": "AAA",
+          "angular_height_deg": 1.5,
+          "legible_at_distance": true
+        }
+      ],
+      "fix_recommendations": [
+        "[Odak Yakalama] 'Satın Al Butonu (SEPETE EKLE)' ilk 4 sabitlenmeye giremedi (%11.9 pay, hedef ≥%8); sıcak renk kontrastı veya boşluk (whitespace) ekleyin.",
+        "[Görsel Karmaşa] Karmaşa endeksi 54/100, hedef ≤45/100 (arka plan dokularını ve ikincil çerçeveleri sadeleştirin)."
+      ],
+      "report_png": "case2_sneaker_ecommerce_ad_after_report.png",
+      "report_pdf": "case2_sneaker_ecommerce_ad_after_report.pdf"
+    },
+    "score_delta": 48,
+    "clutter_delta": -23,
+    "ab_winner": "B Varyantı",
+    "ab_share_before": 49.4,
+    "ab_share_after": 50.6,
+    "ab_battle_pdf": "case2_sneaker_ecommerce_ad_ab_battle.pdf"
+  },
+  "case3_fintech_mobile_ui": {
+    "title": "3. Mobil Fintech Abonelik Ekranı (Yakın Ekran - 0.5m)",
+    "distance_meters": 0.5,
+    "package_width_cm": 12.0,
+    "before": {
+      "overall_attention_score": 44,
+      "focus_score": 62,
+      "clutter_score": 49,
+      "quadrant": "Sol-Üst (Altın Bölge)",
+      "aoi_results": [
+        {
+          "name": "Uygulama Logosu (PAYNOVA)",
+          "aoi_type": "LOGO",
+          "rect": [
+            40,
+            35,
+            190,
+            58
+          ],
+          "is_text_or_cta": false,
+          "share": 1.8,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": null,
+          "wcag_grade": null,
+          "angular_height_deg": 1.12,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Üyelik Fiyatı (49 TL/Ay)",
+          "aoi_type": "PRICE",
+          "rect": [
+            90,
+            350,
+            300,
+            72
+          ],
+          "is_text_or_cta": true,
+          "share": 4.4,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": 1.55,
+          "wcag_grade": "DÜŞÜK",
+          "angular_height_deg": 1.4,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Ana CTA Butonu (ÜCRETSİZ BAŞLA)",
+          "aoi_type": "CTA",
+          "rect": [
+            65,
+            490,
+            350,
+            78
+          ],
+          "is_text_or_cta": true,
+          "share": 3.2,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": 1.53,
+          "wcag_grade": "DÜŞÜK",
+          "angular_height_deg": 1.51,
+          "legible_at_distance": true
+        }
+      ],
+      "fix_recommendations": [
+        "[Marka Algısı] 'Uygulama Logosu (PAYNOVA)' dikkat payı düşük (%1.8, hedef ≥%5); Sol-Üst Altın Bölge'ye yaklaştırın veya kontrastını güçlendirin.",
+        "[Kontrast] 'Üyelik Fiyatı (49 TL/Ay)' kontrastı 1.55:1, hedef ≥4.5:1 (Kritik <3.0:1) (zemin/yazı ton farkını artırın).",
+        "[Odak Yakalama] 'Üyelik Fiyatı (49 TL/Ay)' ilk 4 sabitlenmeye giremedi (%4.4 pay, hedef ≥%8); sıcak renk kontrastı veya boşluk (whitespace) ekleyin.",
+        "[Kontrast] 'Ana CTA Butonu (ÜCRETSİZ BAŞLA)' kontrastı 1.53:1, hedef ≥4.5:1 (Kritik <3.0:1) (zemin/yazı ton farkını artırın).",
+        "[Odak Yakalama] 'Ana CTA Butonu (ÜCRETSİZ BAŞLA)' ilk 4 sabitlenmeye giremedi (%3.2 pay, hedef ≥%8); sıcak renk kontrastı veya boşluk (whitespace) ekleyin.",
+        "[Kör Nokta] Sol-Alt bölgesi yalnızca %12.5 dikkat alıyor (hedef ≥%10); fiyat veya CTA öğelerini bu ölü bölgeden taşıyın."
+      ],
+      "report_png": "case3_fintech_mobile_ui_before_report.png",
+      "report_pdf": "case3_fintech_mobile_ui_before_report.pdf"
+    },
+    "after": {
+      "overall_attention_score": 76,
+      "focus_score": 68,
+      "clutter_score": 53,
+      "quadrant": "Sol-Üst (Altın Bölge)",
+      "aoi_results": [
+        {
+          "name": "Uygulama Logosu (PAYNOVA)",
+          "aoi_type": "LOGO",
+          "rect": [
+            40,
+            35,
+            190,
+            58
+          ],
+          "is_text_or_cta": false,
+          "share": 14.3,
+          "fixation_rank": 1,
+          "ttff": "1. Sabitlenme",
+          "ttff_time": "Sıra #1",
+          "wcag_ratio": null,
+          "wcag_grade": null,
+          "angular_height_deg": 1.12,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Üyelik Fiyatı (49 TL/Ay)",
+          "aoi_type": "PRICE",
+          "rect": [
+            90,
+            350,
+            300,
+            72
+          ],
+          "is_text_or_cta": true,
+          "share": 13.8,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": 5.88,
+          "wcag_grade": "AA",
+          "angular_height_deg": 1.4,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Ana CTA Butonu (ÜCRETSİZ BAŞLA)",
+          "aoi_type": "CTA",
+          "rect": [
+            65,
+            490,
+            350,
+            78
+          ],
+          "is_text_or_cta": true,
+          "share": 24.9,
+          "fixation_rank": 3,
+          "ttff": "3. Sabitlenme",
+          "ttff_time": "Sıra #3",
+          "wcag_ratio": 10.69,
+          "wcag_grade": "AAA",
+          "angular_height_deg": 1.51,
+          "legible_at_distance": true
+        }
+      ],
+      "fix_recommendations": [
+        "[Odak Yakalama] 'Üyelik Fiyatı (49 TL/Ay)' ilk 4 sabitlenmeye giremedi (%13.8 pay, hedef ≥%8); sıcak renk kontrastı veya boşluk (whitespace) ekleyin.",
+        "[Görsel Karmaşa] Karmaşa endeksi 53/100, hedef ≤45/100 (arka plan dokularını ve ikincil çerçeveleri sadeleştirin)."
+      ],
+      "report_png": "case3_fintech_mobile_ui_after_report.png",
+      "report_pdf": "case3_fintech_mobile_ui_after_report.pdf"
+    },
+    "score_delta": 32,
+    "clutter_delta": 4,
+    "ab_winner": "A Varyantı",
+    "ab_share_before": 56.9,
+    "ab_share_after": 43.1,
+    "ab_battle_pdf": "case3_fintech_mobile_ui_ab_battle.pdf"
+  },
+  "case4_vitamin_pharmacy_box": {
+    "title": "4. Eczane Vitamin Kutusu (Uzak Raf - 1.8m)",
+    "distance_meters": 1.8,
+    "package_width_cm": 12.0,
+    "before": {
+      "overall_attention_score": 27,
+      "focus_score": 47,
+      "clutter_score": 84,
+      "quadrant": "Merkez Odak",
+      "aoi_results": [
+        {
+          "name": "Marka Logosu (VITACARE)",
+          "aoi_type": "LOGO",
+          "rect": [
+            40,
+            35,
+            200,
+            62
+          ],
+          "is_text_or_cta": false,
+          "share": 2.1,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": null,
+          "wcag_grade": null,
+          "angular_height_deg": 0.31,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Fiyat Etiketi (195 TL)",
+          "aoi_type": "PRICE",
+          "rect": [
+            320,
+            35,
+            160,
+            62
+          ],
+          "is_text_or_cta": true,
+          "share": 1.7,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": 1.21,
+          "wcag_grade": "DÜŞÜK",
+          "angular_height_deg": 0.31,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Ana Fayda / CTA (1000 MG GÜÇ)",
+          "aoi_type": "CTA",
+          "rect": [
+            120,
+            320,
+            280,
+            72
+          ],
+          "is_text_or_cta": true,
+          "share": 3.0,
+          "fixation_rank": null,
+          "ttff": "Doğrudan Odak Yok",
+          "ttff_time": "Odak Dışı",
+          "wcag_ratio": 1.22,
+          "wcag_grade": "DÜŞÜK",
+          "angular_height_deg": 0.36,
+          "legible_at_distance": true
+        }
+      ],
+      "fix_recommendations": [
+        "[Marka Algısı] 'Marka Logosu (VITACARE)' dikkat payı düşük (%2.1, hedef ≥%5); Sol-Üst Altın Bölge'ye yaklaştırın veya kontrastını güçlendirin.",
+        "[Kontrast] 'Fiyat Etiketi (195 TL)' kontrastı 1.21:1, hedef ≥4.5:1 (Kritik <3.0:1) (zemin/yazı ton farkını artırın).",
+        "[Odak Yakalama] 'Fiyat Etiketi (195 TL)' ilk 4 sabitlenmeye giremedi (%1.7 pay, hedef ≥%8); sıcak renk kontrastı veya boşluk (whitespace) ekleyin.",
+        "[Kontrast] 'Ana Fayda / CTA (1000 MG GÜÇ)' kontrastı 1.22:1, hedef ≥4.5:1 (Kritik <3.0:1) (zemin/yazı ton farkını artırın).",
+        "[Odak Yakalama] 'Ana Fayda / CTA (1000 MG GÜÇ)' ilk 4 sabitlenmeye giremedi (%3.0 pay, hedef ≥%8); sıcak renk kontrastı veya boşluk (whitespace) ekleyin.",
+        "[Görsel Karmaşa] Karmaşa endeksi 84/100, hedef ≤45/100 (arka plan dokularını ve ikincil çerçeveleri sadeleştirin)."
+      ],
+      "report_png": "case4_vitamin_pharmacy_box_before_report.png",
+      "report_pdf": "case4_vitamin_pharmacy_box_before_report.pdf"
+    },
+    "after": {
+      "overall_attention_score": 69,
+      "focus_score": 63,
+      "clutter_score": 64,
+      "quadrant": "Sol-Üst (Altın Bölge)",
+      "aoi_results": [
+        {
+          "name": "Marka Logosu (VITACARE)",
+          "aoi_type": "LOGO",
+          "rect": [
+            40,
+            35,
+            200,
+            62
+          ],
+          "is_text_or_cta": false,
+          "share": 18.4,
+          "fixation_rank": 1,
+          "ttff": "1. Sabitlenme",
+          "ttff_time": "Sıra #1",
+          "wcag_ratio": null,
+          "wcag_grade": null,
+          "angular_height_deg": 0.31,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Fiyat Etiketi (195 TL)",
+          "aoi_type": "PRICE",
+          "rect": [
+            320,
+            35,
+            160,
+            62
+          ],
+          "is_text_or_cta": true,
+          "share": 10.9,
+          "fixation_rank": 2,
+          "ttff": "2. Sabitlenme",
+          "ttff_time": "Sıra #2",
+          "wcag_ratio": 5.92,
+          "wcag_grade": "AA",
+          "angular_height_deg": 0.31,
+          "legible_at_distance": true
+        },
+        {
+          "name": "Ana Fayda / CTA (1000 MG GÜÇ)",
+          "aoi_type": "CTA",
+          "rect": [
+            120,
+            320,
+            280,
+            72
+          ],
+          "is_text_or_cta": true,
+          "share": 21.9,
+          "fixation_rank": 4,
+          "ttff": "4. Sabitlenme",
+          "ttff_time": "Sıra #4",
+          "wcag_ratio": 5.36,
+          "wcag_grade": "AA",
+          "angular_height_deg": 0.36,
+          "legible_at_distance": true
+        }
+      ],
+      "fix_recommendations": [
+        "[Görsel Karmaşa] Karmaşa endeksi 64/100, hedef ≤45/100 (arka plan dokularını ve ikincil çerçeveleri sadeleştirin)."
+      ],
+      "report_png": "case4_vitamin_pharmacy_box_after_report.png",
+      "report_pdf": "case4_vitamin_pharmacy_box_after_report.pdf"
+    },
+    "score_delta": 42,
+    "clutter_delta": -20,
+    "ab_winner": "A Varyantı",
+    "ab_share_before": 61.1,
+    "ab_share_after": 38.9,
+    "ab_battle_pdf": "case4_vitamin_pharmacy_box_ab_battle.pdf"
+  }
+}

@@ -1,0 +1,1937 @@
+{
+  "protocol": {
+    "description": "Strict out-of-sample Train/Test evaluation (N=120 per dataset: N_train=60 for simplex weight calibration, N_test=60 held-out test set for unbiased evaluation with Mean \u00b1 Std and 95% CI).",
+    "total_images_per_dataset": 120,
+    "train_split": 60,
+    "test_split": 60
+  },
+  "datasets": {
+    "ueyes": {
+      "total_count": 120,
+      "train_count": 60,
+      "test_count": 60,
+      "train_grid_search": {
+        "best_weights": {
+          "WEIGHT_SPECTRAL": 0.3,
+          "WEIGHT_LAB": 0.05,
+          "WEIGHT_EDGE": 0.2,
+          "WEIGHT_BIAS": 0.25,
+          "WEIGHT_FACE": 0.2
+        },
+        "best_weights_tuple": [
+          0.3,
+          0.05,
+          0.2,
+          0.25,
+          0.2
+        ],
+        "grid_candidates_tested": 3876,
+        "coarse_metrics": {
+          "NSS": 0.735,
+          "CC": 0.31,
+          "SIM": 0.388
+        }
+      },
+      "train_metrics": {
+        "count": 60,
+        "NSS": 0.711,
+        "CC": 0.303,
+        "SIM": 0.385,
+        "AUC_Judd": 0.694,
+        "models": {
+          "OptiSight_5Layer": {
+            "NSS": 0.711,
+            "CC": 0.303,
+            "SIM": 0.385,
+            "AUC_Judd": 0.694
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": 0.455,
+            "CC": 0.205,
+            "SIM": 0.361,
+            "AUC_Judd": 0.609
+          },
+          "OptiSight_Hybrid": {
+            "NSS": 0.77,
+            "CC": 0.335,
+            "SIM": 0.392,
+            "AUC_Judd": 0.705
+          },
+          "OptiSight_Optimized": {
+            "NSS": 0.703,
+            "CC": 0.3,
+            "SIM": 0.383,
+            "AUC_Judd": 0.693
+          },
+          "CenterBias_Baseline": {
+            "NSS": 0.534,
+            "CC": 0.233,
+            "SIM": 0.367,
+            "AUC_Judd": 0.655
+          },
+          "IttiKoch_Baseline": {
+            "NSS": 0.48,
+            "CC": 0.205,
+            "SIM": 0.368,
+            "AUC_Judd": 0.652
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": 0.475,
+            "CC": 0.185,
+            "SIM": 0.331,
+            "AUC_Judd": 0.672
+          }
+        },
+        "models_stats": {
+          "OptiSight_5Layer": {
+            "NSS": {
+              "mean": 0.711,
+              "std": 0.354,
+              "ci95": 0.09
+            },
+            "CC": {
+              "mean": 0.303,
+              "std": 0.152,
+              "ci95": 0.039
+            },
+            "SIM": {
+              "mean": 0.385,
+              "std": 0.073,
+              "ci95": 0.019
+            },
+            "AUC_Judd": {
+              "mean": 0.694,
+              "std": 0.084,
+              "ci95": 0.021
+            }
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": {
+              "mean": 0.455,
+              "std": 0.591,
+              "ci95": 0.15
+            },
+            "CC": {
+              "mean": 0.205,
+              "std": 0.252,
+              "ci95": 0.064
+            },
+            "SIM": {
+              "mean": 0.361,
+              "std": 0.094,
+              "ci95": 0.024
+            },
+            "AUC_Judd": {
+              "mean": 0.609,
+              "std": 0.141,
+              "ci95": 0.036
+            }
+          },
+          "OptiSight_Hybrid": {
+            "NSS": {
+              "mean": 0.77,
+              "std": 0.368,
+              "ci95": 0.093
+            },
+            "CC": {
+              "mean": 0.335,
+              "std": 0.157,
+              "ci95": 0.04
+            },
+            "SIM": {
+              "mean": 0.392,
+              "std": 0.076,
+              "ci95": 0.019
+            },
+            "AUC_Judd": {
+              "mean": 0.705,
+              "std": 0.081,
+              "ci95": 0.021
+            }
+          },
+          "OptiSight_Optimized": {
+            "NSS": {
+              "mean": 0.703,
+              "std": 0.36,
+              "ci95": 0.091
+            },
+            "CC": {
+              "mean": 0.3,
+              "std": 0.16,
+              "ci95": 0.041
+            },
+            "SIM": {
+              "mean": 0.383,
+              "std": 0.075,
+              "ci95": 0.019
+            },
+            "AUC_Judd": {
+              "mean": 0.693,
+              "std": 0.085,
+              "ci95": 0.021
+            }
+          },
+          "CenterBias_Baseline": {
+            "NSS": {
+              "mean": 0.534,
+              "std": 0.37,
+              "ci95": 0.094
+            },
+            "CC": {
+              "mean": 0.233,
+              "std": 0.171,
+              "ci95": 0.043
+            },
+            "SIM": {
+              "mean": 0.367,
+              "std": 0.079,
+              "ci95": 0.02
+            },
+            "AUC_Judd": {
+              "mean": 0.655,
+              "std": 0.1,
+              "ci95": 0.025
+            }
+          },
+          "IttiKoch_Baseline": {
+            "NSS": {
+              "mean": 0.48,
+              "std": 0.381,
+              "ci95": 0.096
+            },
+            "CC": {
+              "mean": 0.205,
+              "std": 0.139,
+              "ci95": 0.035
+            },
+            "SIM": {
+              "mean": 0.368,
+              "std": 0.074,
+              "ci95": 0.019
+            },
+            "AUC_Judd": {
+              "mean": 0.652,
+              "std": 0.09,
+              "ci95": 0.023
+            }
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": {
+              "mean": 0.475,
+              "std": 0.298,
+              "ci95": 0.075
+            },
+            "CC": {
+              "mean": 0.185,
+              "std": 0.102,
+              "ci95": 0.026
+            },
+            "SIM": {
+              "mean": 0.331,
+              "std": 0.055,
+              "ci95": 0.014
+            },
+            "AUC_Judd": {
+              "mean": 0.672,
+              "std": 0.081,
+              "ci95": 0.02
+            }
+          }
+        },
+        "score_validation": {
+          "mean_overall_score": 42.37,
+          "std_overall_score": 5.92,
+          "corr_overall_score_vs_human_concentration_nss": 0.48,
+          "corr_focus_score_vs_human_concentration_nss": 0.307,
+          "corr_overall_score_vs_predicted_nss": 0.522,
+          "corr_overall_score_vs_predicted_auc": 0.545
+        }
+      },
+      "held_out_test_metrics": {
+        "count": 60,
+        "NSS": 0.704,
+        "CC": 0.31,
+        "SIM": 0.373,
+        "AUC_Judd": 0.695,
+        "models": {
+          "OptiSight_5Layer": {
+            "NSS": 0.704,
+            "CC": 0.31,
+            "SIM": 0.373,
+            "AUC_Judd": 0.695
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": 0.323,
+            "CC": 0.158,
+            "SIM": 0.334,
+            "AUC_Judd": 0.599
+          },
+          "OptiSight_Hybrid": {
+            "NSS": 0.717,
+            "CC": 0.322,
+            "SIM": 0.378,
+            "AUC_Judd": 0.702
+          },
+          "OptiSight_Optimized": {
+            "NSS": 0.705,
+            "CC": 0.308,
+            "SIM": 0.373,
+            "AUC_Judd": 0.694
+          },
+          "CenterBias_Baseline": {
+            "NSS": 0.546,
+            "CC": 0.236,
+            "SIM": 0.354,
+            "AUC_Judd": 0.657
+          },
+          "IttiKoch_Baseline": {
+            "NSS": 0.414,
+            "CC": 0.181,
+            "SIM": 0.348,
+            "AUC_Judd": 0.637
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": 0.531,
+            "CC": 0.225,
+            "SIM": 0.343,
+            "AUC_Judd": 0.685
+          },
+          "No_Spectral (-SR)": {
+            "NSS": 0.668,
+            "CC": 0.295,
+            "SIM": 0.37,
+            "AUC_Judd": 0.687
+          },
+          "No_LAB (-Color)": {
+            "NSS": 0.731,
+            "CC": 0.319,
+            "SIM": 0.374,
+            "AUC_Judd": 0.699
+          },
+          "No_Edge (-Edge)": {
+            "NSS": 0.621,
+            "CC": 0.271,
+            "SIM": 0.364,
+            "AUC_Judd": 0.674
+          },
+          "No_CenterBias (-Bias)": {
+            "NSS": 0.515,
+            "CC": 0.226,
+            "SIM": 0.356,
+            "AUC_Judd": 0.653
+          },
+          "No_Face (-YuNet)": {
+            "NSS": 0.702,
+            "CC": 0.309,
+            "SIM": 0.373,
+            "AUC_Judd": 0.694
+          },
+          "No_Objectness (-DoG)": {
+            "NSS": 0.727,
+            "CC": 0.319,
+            "SIM": 0.374,
+            "AUC_Judd": 0.699
+          }
+        },
+        "models_stats": {
+          "OptiSight_5Layer": {
+            "NSS": {
+              "mean": 0.704,
+              "std": 0.394,
+              "ci95": 0.1
+            },
+            "CC": {
+              "mean": 0.31,
+              "std": 0.156,
+              "ci95": 0.039
+            },
+            "SIM": {
+              "mean": 0.373,
+              "std": 0.077,
+              "ci95": 0.02
+            },
+            "AUC_Judd": {
+              "mean": 0.695,
+              "std": 0.089,
+              "ci95": 0.022
+            }
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": {
+              "mean": 0.323,
+              "std": 0.511,
+              "ci95": 0.129
+            },
+            "CC": {
+              "mean": 0.158,
+              "std": 0.235,
+              "ci95": 0.059
+            },
+            "SIM": {
+              "mean": 0.334,
+              "std": 0.107,
+              "ci95": 0.027
+            },
+            "AUC_Judd": {
+              "mean": 0.599,
+              "std": 0.13,
+              "ci95": 0.033
+            }
+          },
+          "OptiSight_Hybrid": {
+            "NSS": {
+              "mean": 0.717,
+              "std": 0.381,
+              "ci95": 0.096
+            },
+            "CC": {
+              "mean": 0.322,
+              "std": 0.167,
+              "ci95": 0.042
+            },
+            "SIM": {
+              "mean": 0.378,
+              "std": 0.082,
+              "ci95": 0.021
+            },
+            "AUC_Judd": {
+              "mean": 0.702,
+              "std": 0.089,
+              "ci95": 0.023
+            }
+          },
+          "OptiSight_Optimized": {
+            "NSS": {
+              "mean": 0.705,
+              "std": 0.406,
+              "ci95": 0.103
+            },
+            "CC": {
+              "mean": 0.308,
+              "std": 0.164,
+              "ci95": 0.042
+            },
+            "SIM": {
+              "mean": 0.373,
+              "std": 0.078,
+              "ci95": 0.02
+            },
+            "AUC_Judd": {
+              "mean": 0.694,
+              "std": 0.093,
+              "ci95": 0.023
+            }
+          },
+          "CenterBias_Baseline": {
+            "NSS": {
+              "mean": 0.546,
+              "std": 0.434,
+              "ci95": 0.11
+            },
+            "CC": {
+              "mean": 0.236,
+              "std": 0.187,
+              "ci95": 0.047
+            },
+            "SIM": {
+              "mean": 0.354,
+              "std": 0.08,
+              "ci95": 0.02
+            },
+            "AUC_Judd": {
+              "mean": 0.657,
+              "std": 0.119,
+              "ci95": 0.03
+            }
+          },
+          "IttiKoch_Baseline": {
+            "NSS": {
+              "mean": 0.414,
+              "std": 0.37,
+              "ci95": 0.094
+            },
+            "CC": {
+              "mean": 0.181,
+              "std": 0.161,
+              "ci95": 0.041
+            },
+            "SIM": {
+              "mean": 0.348,
+              "std": 0.08,
+              "ci95": 0.02
+            },
+            "AUC_Judd": {
+              "mean": 0.637,
+              "std": 0.107,
+              "ci95": 0.027
+            }
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": {
+              "mean": 0.531,
+              "std": 0.354,
+              "ci95": 0.09
+            },
+            "CC": {
+              "mean": 0.225,
+              "std": 0.12,
+              "ci95": 0.03
+            },
+            "SIM": {
+              "mean": 0.343,
+              "std": 0.061,
+              "ci95": 0.015
+            },
+            "AUC_Judd": {
+              "mean": 0.685,
+              "std": 0.079,
+              "ci95": 0.02
+            }
+          },
+          "No_Spectral (-SR)": {
+            "NSS": {
+              "mean": 0.668,
+              "std": 0.396,
+              "ci95": 0.1
+            },
+            "CC": {
+              "mean": 0.295,
+              "std": 0.16,
+              "ci95": 0.04
+            },
+            "SIM": {
+              "mean": 0.37,
+              "std": 0.078,
+              "ci95": 0.02
+            },
+            "AUC_Judd": {
+              "mean": 0.687,
+              "std": 0.092,
+              "ci95": 0.023
+            }
+          },
+          "No_LAB (-Color)": {
+            "NSS": {
+              "mean": 0.731,
+              "std": 0.396,
+              "ci95": 0.1
+            },
+            "CC": {
+              "mean": 0.319,
+              "std": 0.158,
+              "ci95": 0.04
+            },
+            "SIM": {
+              "mean": 0.374,
+              "std": 0.077,
+              "ci95": 0.019
+            },
+            "AUC_Judd": {
+              "mean": 0.699,
+              "std": 0.088,
+              "ci95": 0.022
+            }
+          },
+          "No_Edge (-Edge)": {
+            "NSS": {
+              "mean": 0.621,
+              "std": 0.424,
+              "ci95": 0.107
+            },
+            "CC": {
+              "mean": 0.271,
+              "std": 0.172,
+              "ci95": 0.043
+            },
+            "SIM": {
+              "mean": 0.364,
+              "std": 0.079,
+              "ci95": 0.02
+            },
+            "AUC_Judd": {
+              "mean": 0.674,
+              "std": 0.103,
+              "ci95": 0.026
+            }
+          },
+          "No_CenterBias (-Bias)": {
+            "NSS": {
+              "mean": 0.515,
+              "std": 0.398,
+              "ci95": 0.101
+            },
+            "CC": {
+              "mean": 0.226,
+              "std": 0.161,
+              "ci95": 0.041
+            },
+            "SIM": {
+              "mean": 0.356,
+              "std": 0.075,
+              "ci95": 0.019
+            },
+            "AUC_Judd": {
+              "mean": 0.653,
+              "std": 0.101,
+              "ci95": 0.026
+            }
+          },
+          "No_Face (-YuNet)": {
+            "NSS": {
+              "mean": 0.702,
+              "std": 0.394,
+              "ci95": 0.1
+            },
+            "CC": {
+              "mean": 0.309,
+              "std": 0.156,
+              "ci95": 0.04
+            },
+            "SIM": {
+              "mean": 0.373,
+              "std": 0.076,
+              "ci95": 0.019
+            },
+            "AUC_Judd": {
+              "mean": 0.694,
+              "std": 0.089,
+              "ci95": 0.023
+            }
+          },
+          "No_Objectness (-DoG)": {
+            "NSS": {
+              "mean": 0.727,
+              "std": 0.394,
+              "ci95": 0.1
+            },
+            "CC": {
+              "mean": 0.319,
+              "std": 0.155,
+              "ci95": 0.039
+            },
+            "SIM": {
+              "mean": 0.374,
+              "std": 0.077,
+              "ci95": 0.019
+            },
+            "AUC_Judd": {
+              "mean": 0.699,
+              "std": 0.089,
+              "ci95": 0.023
+            }
+          }
+        },
+        "score_validation": {
+          "mean_overall_score": 41.62,
+          "std_overall_score": 5.67,
+          "corr_overall_score_vs_human_concentration_nss": 0.344,
+          "corr_focus_score_vs_human_concentration_nss": 0.325,
+          "corr_overall_score_vs_predicted_nss": 0.483,
+          "corr_overall_score_vs_predicted_auc": 0.473
+        }
+      }
+    },
+    "mit1003": {
+      "total_count": 120,
+      "train_count": 60,
+      "test_count": 60,
+      "train_grid_search": {
+        "best_weights": {
+          "WEIGHT_SPECTRAL": 0.1,
+          "WEIGHT_LAB": 0.05,
+          "WEIGHT_EDGE": 0.1,
+          "WEIGHT_BIAS": 0.2,
+          "WEIGHT_FACE": 0.55
+        },
+        "best_weights_tuple": [
+          0.1,
+          0.05,
+          0.1,
+          0.2,
+          0.55
+        ],
+        "grid_candidates_tested": 3876,
+        "coarse_metrics": {
+          "NSS": 1.357,
+          "CC": 0.441,
+          "SIM": 0.306
+        }
+      },
+      "train_metrics": {
+        "count": 60,
+        "NSS": 1.425,
+        "CC": 0.418,
+        "SIM": 0.299,
+        "AUC_Judd": 0.851,
+        "models": {
+          "OptiSight_5Layer": {
+            "NSS": 1.425,
+            "CC": 0.418,
+            "SIM": 0.299,
+            "AUC_Judd": 0.851
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": 0.589,
+            "CC": 0.146,
+            "SIM": 0.237,
+            "AUC_Judd": 0.648
+          },
+          "OptiSight_Hybrid": {
+            "NSS": 1.421,
+            "CC": 0.411,
+            "SIM": 0.296,
+            "AUC_Judd": 0.845
+          },
+          "OptiSight_Optimized": {
+            "NSS": 1.515,
+            "CC": 0.447,
+            "SIM": 0.305,
+            "AUC_Judd": 0.858
+          },
+          "CenterBias_Baseline": {
+            "NSS": 1.206,
+            "CC": 0.376,
+            "SIM": 0.283,
+            "AUC_Judd": 0.834
+          },
+          "IttiKoch_Baseline": {
+            "NSS": 0.679,
+            "CC": 0.215,
+            "SIM": 0.265,
+            "AUC_Judd": 0.695
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": 0.727,
+            "CC": 0.175,
+            "SIM": 0.264,
+            "AUC_Judd": 0.723
+          }
+        },
+        "models_stats": {
+          "OptiSight_5Layer": {
+            "NSS": {
+              "mean": 1.425,
+              "std": 0.603,
+              "ci95": 0.153
+            },
+            "CC": {
+              "mean": 0.418,
+              "std": 0.103,
+              "ci95": 0.026
+            },
+            "SIM": {
+              "mean": 0.299,
+              "std": 0.054,
+              "ci95": 0.014
+            },
+            "AUC_Judd": {
+              "mean": 0.851,
+              "std": 0.099,
+              "ci95": 0.025
+            }
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": {
+              "mean": 0.589,
+              "std": 1.292,
+              "ci95": 0.327
+            },
+            "CC": {
+              "mean": 0.146,
+              "std": 0.203,
+              "ci95": 0.051
+            },
+            "SIM": {
+              "mean": 0.237,
+              "std": 0.068,
+              "ci95": 0.017
+            },
+            "AUC_Judd": {
+              "mean": 0.648,
+              "std": 0.235,
+              "ci95": 0.059
+            }
+          },
+          "OptiSight_Hybrid": {
+            "NSS": {
+              "mean": 1.421,
+              "std": 0.662,
+              "ci95": 0.168
+            },
+            "CC": {
+              "mean": 0.411,
+              "std": 0.105,
+              "ci95": 0.027
+            },
+            "SIM": {
+              "mean": 0.296,
+              "std": 0.055,
+              "ci95": 0.014
+            },
+            "AUC_Judd": {
+              "mean": 0.845,
+              "std": 0.104,
+              "ci95": 0.026
+            }
+          },
+          "OptiSight_Optimized": {
+            "NSS": {
+              "mean": 1.515,
+              "std": 0.764,
+              "ci95": 0.193
+            },
+            "CC": {
+              "mean": 0.447,
+              "std": 0.107,
+              "ci95": 0.027
+            },
+            "SIM": {
+              "mean": 0.305,
+              "std": 0.055,
+              "ci95": 0.014
+            },
+            "AUC_Judd": {
+              "mean": 0.858,
+              "std": 0.097,
+              "ci95": 0.025
+            }
+          },
+          "CenterBias_Baseline": {
+            "NSS": {
+              "mean": 1.206,
+              "std": 0.512,
+              "ci95": 0.129
+            },
+            "CC": {
+              "mean": 0.376,
+              "std": 0.075,
+              "ci95": 0.019
+            },
+            "SIM": {
+              "mean": 0.283,
+              "std": 0.054,
+              "ci95": 0.014
+            },
+            "AUC_Judd": {
+              "mean": 0.834,
+              "std": 0.131,
+              "ci95": 0.033
+            }
+          },
+          "IttiKoch_Baseline": {
+            "NSS": {
+              "mean": 0.679,
+              "std": 0.64,
+              "ci95": 0.162
+            },
+            "CC": {
+              "mean": 0.215,
+              "std": 0.135,
+              "ci95": 0.034
+            },
+            "SIM": {
+              "mean": 0.265,
+              "std": 0.06,
+              "ci95": 0.015
+            },
+            "AUC_Judd": {
+              "mean": 0.695,
+              "std": 0.165,
+              "ci95": 0.042
+            }
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": {
+              "mean": 0.727,
+              "std": 0.749,
+              "ci95": 0.189
+            },
+            "CC": {
+              "mean": 0.175,
+              "std": 0.135,
+              "ci95": 0.034
+            },
+            "SIM": {
+              "mean": 0.264,
+              "std": 0.071,
+              "ci95": 0.018
+            },
+            "AUC_Judd": {
+              "mean": 0.723,
+              "std": 0.162,
+              "ci95": 0.041
+            }
+          }
+        },
+        "score_validation": {
+          "mean_overall_score": 41.93,
+          "std_overall_score": 5.44,
+          "corr_overall_score_vs_human_concentration_nss": 0.088,
+          "corr_focus_score_vs_human_concentration_nss": 0.079,
+          "corr_overall_score_vs_predicted_nss": 0.168,
+          "corr_overall_score_vs_predicted_auc": 0.068
+        }
+      },
+      "held_out_test_metrics": {
+        "count": 60,
+        "NSS": 1.285,
+        "CC": 0.375,
+        "SIM": 0.288,
+        "AUC_Judd": 0.822,
+        "models": {
+          "OptiSight_5Layer": {
+            "NSS": 1.285,
+            "CC": 0.375,
+            "SIM": 0.288,
+            "AUC_Judd": 0.822
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": 0.5,
+            "CC": 0.13,
+            "SIM": 0.229,
+            "AUC_Judd": 0.596
+          },
+          "OptiSight_Hybrid": {
+            "NSS": 1.264,
+            "CC": 0.365,
+            "SIM": 0.286,
+            "AUC_Judd": 0.815
+          },
+          "OptiSight_Optimized": {
+            "NSS": 1.347,
+            "CC": 0.397,
+            "SIM": 0.293,
+            "AUC_Judd": 0.823
+          },
+          "CenterBias_Baseline": {
+            "NSS": 1.151,
+            "CC": 0.353,
+            "SIM": 0.275,
+            "AUC_Judd": 0.82
+          },
+          "IttiKoch_Baseline": {
+            "NSS": 0.787,
+            "CC": 0.215,
+            "SIM": 0.262,
+            "AUC_Judd": 0.7
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": 0.738,
+            "CC": 0.164,
+            "SIM": 0.255,
+            "AUC_Judd": 0.706
+          },
+          "No_Spectral (-SR)": {
+            "NSS": 1.258,
+            "CC": 0.368,
+            "SIM": 0.285,
+            "AUC_Judd": 0.813
+          },
+          "No_LAB (-Color)": {
+            "NSS": 1.295,
+            "CC": 0.385,
+            "SIM": 0.292,
+            "AUC_Judd": 0.834
+          },
+          "No_Edge (-Edge)": {
+            "NSS": 1.26,
+            "CC": 0.367,
+            "SIM": 0.283,
+            "AUC_Judd": 0.808
+          },
+          "No_CenterBias (-Bias)": {
+            "NSS": 0.801,
+            "CC": 0.21,
+            "SIM": 0.262,
+            "AUC_Judd": 0.694
+          },
+          "No_Face (-YuNet)": {
+            "NSS": 1.247,
+            "CC": 0.364,
+            "SIM": 0.286,
+            "AUC_Judd": 0.817
+          },
+          "No_Objectness (-DoG)": {
+            "NSS": 1.361,
+            "CC": 0.392,
+            "SIM": 0.288,
+            "AUC_Judd": 0.844
+          }
+        },
+        "models_stats": {
+          "OptiSight_5Layer": {
+            "NSS": {
+              "mean": 1.285,
+              "std": 0.769,
+              "ci95": 0.195
+            },
+            "CC": {
+              "mean": 0.375,
+              "std": 0.113,
+              "ci95": 0.029
+            },
+            "SIM": {
+              "mean": 0.288,
+              "std": 0.05,
+              "ci95": 0.013
+            },
+            "AUC_Judd": {
+              "mean": 0.822,
+              "std": 0.13,
+              "ci95": 0.033
+            }
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": {
+              "mean": 0.5,
+              "std": 1.284,
+              "ci95": 0.325
+            },
+            "CC": {
+              "mean": 0.13,
+              "std": 0.197,
+              "ci95": 0.05
+            },
+            "SIM": {
+              "mean": 0.229,
+              "std": 0.064,
+              "ci95": 0.016
+            },
+            "AUC_Judd": {
+              "mean": 0.596,
+              "std": 0.281,
+              "ci95": 0.071
+            }
+          },
+          "OptiSight_Hybrid": {
+            "NSS": {
+              "mean": 1.264,
+              "std": 0.783,
+              "ci95": 0.198
+            },
+            "CC": {
+              "mean": 0.365,
+              "std": 0.108,
+              "ci95": 0.027
+            },
+            "SIM": {
+              "mean": 0.286,
+              "std": 0.052,
+              "ci95": 0.013
+            },
+            "AUC_Judd": {
+              "mean": 0.815,
+              "std": 0.14,
+              "ci95": 0.035
+            }
+          },
+          "OptiSight_Optimized": {
+            "NSS": {
+              "mean": 1.347,
+              "std": 0.924,
+              "ci95": 0.234
+            },
+            "CC": {
+              "mean": 0.397,
+              "std": 0.116,
+              "ci95": 0.029
+            },
+            "SIM": {
+              "mean": 0.293,
+              "std": 0.05,
+              "ci95": 0.013
+            },
+            "AUC_Judd": {
+              "mean": 0.823,
+              "std": 0.133,
+              "ci95": 0.034
+            }
+          },
+          "CenterBias_Baseline": {
+            "NSS": {
+              "mean": 1.151,
+              "std": 0.491,
+              "ci95": 0.124
+            },
+            "CC": {
+              "mean": 0.353,
+              "std": 0.114,
+              "ci95": 0.029
+            },
+            "SIM": {
+              "mean": 0.275,
+              "std": 0.056,
+              "ci95": 0.014
+            },
+            "AUC_Judd": {
+              "mean": 0.82,
+              "std": 0.127,
+              "ci95": 0.032
+            }
+          },
+          "IttiKoch_Baseline": {
+            "NSS": {
+              "mean": 0.787,
+              "std": 0.875,
+              "ci95": 0.222
+            },
+            "CC": {
+              "mean": 0.215,
+              "std": 0.168,
+              "ci95": 0.042
+            },
+            "SIM": {
+              "mean": 0.262,
+              "std": 0.065,
+              "ci95": 0.017
+            },
+            "AUC_Judd": {
+              "mean": 0.7,
+              "std": 0.2,
+              "ci95": 0.051
+            }
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": {
+              "mean": 0.738,
+              "std": 1.098,
+              "ci95": 0.278
+            },
+            "CC": {
+              "mean": 0.164,
+              "std": 0.15,
+              "ci95": 0.038
+            },
+            "SIM": {
+              "mean": 0.255,
+              "std": 0.072,
+              "ci95": 0.018
+            },
+            "AUC_Judd": {
+              "mean": 0.706,
+              "std": 0.181,
+              "ci95": 0.046
+            }
+          },
+          "No_Spectral (-SR)": {
+            "NSS": {
+              "mean": 1.258,
+              "std": 0.81,
+              "ci95": 0.205
+            },
+            "CC": {
+              "mean": 0.368,
+              "std": 0.112,
+              "ci95": 0.028
+            },
+            "SIM": {
+              "mean": 0.285,
+              "std": 0.05,
+              "ci95": 0.013
+            },
+            "AUC_Judd": {
+              "mean": 0.813,
+              "std": 0.139,
+              "ci95": 0.035
+            }
+          },
+          "No_LAB (-Color)": {
+            "NSS": {
+              "mean": 1.295,
+              "std": 0.661,
+              "ci95": 0.167
+            },
+            "CC": {
+              "mean": 0.385,
+              "std": 0.104,
+              "ci95": 0.026
+            },
+            "SIM": {
+              "mean": 0.292,
+              "std": 0.051,
+              "ci95": 0.013
+            },
+            "AUC_Judd": {
+              "mean": 0.834,
+              "std": 0.11,
+              "ci95": 0.028
+            }
+          },
+          "No_Edge (-Edge)": {
+            "NSS": {
+              "mean": 1.26,
+              "std": 0.834,
+              "ci95": 0.211
+            },
+            "CC": {
+              "mean": 0.367,
+              "std": 0.115,
+              "ci95": 0.029
+            },
+            "SIM": {
+              "mean": 0.283,
+              "std": 0.049,
+              "ci95": 0.012
+            },
+            "AUC_Judd": {
+              "mean": 0.808,
+              "std": 0.144,
+              "ci95": 0.036
+            }
+          },
+          "No_CenterBias (-Bias)": {
+            "NSS": {
+              "mean": 0.801,
+              "std": 1.075,
+              "ci95": 0.272
+            },
+            "CC": {
+              "mean": 0.21,
+              "std": 0.193,
+              "ci95": 0.049
+            },
+            "SIM": {
+              "mean": 0.262,
+              "std": 0.068,
+              "ci95": 0.017
+            },
+            "AUC_Judd": {
+              "mean": 0.694,
+              "std": 0.221,
+              "ci95": 0.056
+            }
+          },
+          "No_Face (-YuNet)": {
+            "NSS": {
+              "mean": 1.247,
+              "std": 0.76,
+              "ci95": 0.192
+            },
+            "CC": {
+              "mean": 0.364,
+              "std": 0.12,
+              "ci95": 0.03
+            },
+            "SIM": {
+              "mean": 0.286,
+              "std": 0.051,
+              "ci95": 0.013
+            },
+            "AUC_Judd": {
+              "mean": 0.817,
+              "std": 0.133,
+              "ci95": 0.034
+            }
+          },
+          "No_Objectness (-DoG)": {
+            "NSS": {
+              "mean": 1.361,
+              "std": 0.65,
+              "ci95": 0.164
+            },
+            "CC": {
+              "mean": 0.392,
+              "std": 0.092,
+              "ci95": 0.023
+            },
+            "SIM": {
+              "mean": 0.288,
+              "std": 0.051,
+              "ci95": 0.013
+            },
+            "AUC_Judd": {
+              "mean": 0.844,
+              "std": 0.115,
+              "ci95": 0.029
+            }
+          }
+        },
+        "score_validation": {
+          "mean_overall_score": 42.1,
+          "std_overall_score": 5.26,
+          "corr_overall_score_vs_human_concentration_nss": 0.113,
+          "corr_focus_score_vs_human_concentration_nss": 0.037,
+          "corr_overall_score_vs_predicted_nss": 0.571,
+          "corr_overall_score_vs_predicted_auc": 0.517
+        }
+      }
+    },
+    "salicon": {
+      "total_count": 120,
+      "train_count": 60,
+      "test_count": 60,
+      "train_grid_search": {
+        "best_weights": {
+          "WEIGHT_SPECTRAL": 0.25,
+          "WEIGHT_LAB": 0.05,
+          "WEIGHT_EDGE": 0.05,
+          "WEIGHT_BIAS": 0.15,
+          "WEIGHT_FACE": 0.5
+        },
+        "best_weights_tuple": [
+          0.25,
+          0.05,
+          0.05,
+          0.15,
+          0.5
+        ],
+        "grid_candidates_tested": 3876,
+        "coarse_metrics": {
+          "NSS": 1.227,
+          "CC": 0.557,
+          "SIM": 0.504
+        }
+      },
+      "train_metrics": {
+        "count": 60,
+        "NSS": 1.208,
+        "CC": 0.564,
+        "SIM": 0.5,
+        "AUC_Judd": 0.838,
+        "models": {
+          "OptiSight_5Layer": {
+            "NSS": 1.208,
+            "CC": 0.564,
+            "SIM": 0.5,
+            "AUC_Judd": 0.838
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": 0.181,
+            "CC": 0.104,
+            "SIM": 0.39,
+            "AUC_Judd": 0.594
+          },
+          "OptiSight_Hybrid": {
+            "NSS": 1.102,
+            "CC": 0.524,
+            "SIM": 0.492,
+            "AUC_Judd": 0.818
+          },
+          "OptiSight_Optimized": {
+            "NSS": 1.257,
+            "CC": 0.583,
+            "SIM": 0.505,
+            "AUC_Judd": 0.844
+          },
+          "CenterBias_Baseline": {
+            "NSS": 0.995,
+            "CC": 0.505,
+            "SIM": 0.479,
+            "AUC_Judd": 0.806
+          },
+          "IttiKoch_Baseline": {
+            "NSS": 0.783,
+            "CC": 0.338,
+            "SIM": 0.456,
+            "AUC_Judd": 0.723
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": 0.689,
+            "CC": 0.268,
+            "SIM": 0.415,
+            "AUC_Judd": 0.706
+          }
+        },
+        "models_stats": {
+          "OptiSight_5Layer": {
+            "NSS": {
+              "mean": 1.208,
+              "std": 0.411,
+              "ci95": 0.104
+            },
+            "CC": {
+              "mean": 0.564,
+              "std": 0.13,
+              "ci95": 0.033
+            },
+            "SIM": {
+              "mean": 0.5,
+              "std": 0.126,
+              "ci95": 0.032
+            },
+            "AUC_Judd": {
+              "mean": 0.838,
+              "std": 0.082,
+              "ci95": 0.021
+            }
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": {
+              "mean": 0.181,
+              "std": 0.544,
+              "ci95": 0.138
+            },
+            "CC": {
+              "mean": 0.104,
+              "std": 0.2,
+              "ci95": 0.05
+            },
+            "SIM": {
+              "mean": 0.39,
+              "std": 0.113,
+              "ci95": 0.029
+            },
+            "AUC_Judd": {
+              "mean": 0.594,
+              "std": 0.165,
+              "ci95": 0.042
+            }
+          },
+          "OptiSight_Hybrid": {
+            "NSS": {
+              "mean": 1.102,
+              "std": 0.424,
+              "ci95": 0.107
+            },
+            "CC": {
+              "mean": 0.524,
+              "std": 0.134,
+              "ci95": 0.034
+            },
+            "SIM": {
+              "mean": 0.492,
+              "std": 0.125,
+              "ci95": 0.032
+            },
+            "AUC_Judd": {
+              "mean": 0.818,
+              "std": 0.09,
+              "ci95": 0.023
+            }
+          },
+          "OptiSight_Optimized": {
+            "NSS": {
+              "mean": 1.257,
+              "std": 0.444,
+              "ci95": 0.112
+            },
+            "CC": {
+              "mean": 0.583,
+              "std": 0.138,
+              "ci95": 0.035
+            },
+            "SIM": {
+              "mean": 0.505,
+              "std": 0.128,
+              "ci95": 0.032
+            },
+            "AUC_Judd": {
+              "mean": 0.844,
+              "std": 0.089,
+              "ci95": 0.022
+            }
+          },
+          "CenterBias_Baseline": {
+            "NSS": {
+              "mean": 0.995,
+              "std": 0.411,
+              "ci95": 0.104
+            },
+            "CC": {
+              "mean": 0.505,
+              "std": 0.174,
+              "ci95": 0.044
+            },
+            "SIM": {
+              "mean": 0.479,
+              "std": 0.141,
+              "ci95": 0.036
+            },
+            "AUC_Judd": {
+              "mean": 0.806,
+              "std": 0.116,
+              "ci95": 0.029
+            }
+          },
+          "IttiKoch_Baseline": {
+            "NSS": {
+              "mean": 0.783,
+              "std": 0.567,
+              "ci95": 0.143
+            },
+            "CC": {
+              "mean": 0.338,
+              "std": 0.199,
+              "ci95": 0.05
+            },
+            "SIM": {
+              "mean": 0.456,
+              "std": 0.113,
+              "ci95": 0.029
+            },
+            "AUC_Judd": {
+              "mean": 0.723,
+              "std": 0.13,
+              "ci95": 0.033
+            }
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": {
+              "mean": 0.689,
+              "std": 0.514,
+              "ci95": 0.13
+            },
+            "CC": {
+              "mean": 0.268,
+              "std": 0.172,
+              "ci95": 0.044
+            },
+            "SIM": {
+              "mean": 0.415,
+              "std": 0.086,
+              "ci95": 0.022
+            },
+            "AUC_Judd": {
+              "mean": 0.706,
+              "std": 0.124,
+              "ci95": 0.031
+            }
+          }
+        },
+        "score_validation": {
+          "mean_overall_score": 41.1,
+          "std_overall_score": 5.28,
+          "corr_overall_score_vs_human_concentration_nss": 0.313,
+          "corr_focus_score_vs_human_concentration_nss": 0.341,
+          "corr_overall_score_vs_predicted_nss": 0.439,
+          "corr_overall_score_vs_predicted_auc": 0.357
+        }
+      },
+      "held_out_test_metrics": {
+        "count": 60,
+        "NSS": 1.249,
+        "CC": 0.556,
+        "SIM": 0.478,
+        "AUC_Judd": 0.845,
+        "models": {
+          "OptiSight_5Layer": {
+            "NSS": 1.249,
+            "CC": 0.556,
+            "SIM": 0.478,
+            "AUC_Judd": 0.845
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": 0.346,
+            "CC": 0.145,
+            "SIM": 0.383,
+            "AUC_Judd": 0.622
+          },
+          "OptiSight_Hybrid": {
+            "NSS": 1.185,
+            "CC": 0.527,
+            "SIM": 0.472,
+            "AUC_Judd": 0.832
+          },
+          "OptiSight_Optimized": {
+            "NSS": 1.335,
+            "CC": 0.59,
+            "SIM": 0.485,
+            "AUC_Judd": 0.853
+          },
+          "CenterBias_Baseline": {
+            "NSS": 1.014,
+            "CC": 0.493,
+            "SIM": 0.458,
+            "AUC_Judd": 0.809
+          },
+          "IttiKoch_Baseline": {
+            "NSS": 0.741,
+            "CC": 0.317,
+            "SIM": 0.426,
+            "AUC_Judd": 0.717
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": 0.641,
+            "CC": 0.239,
+            "SIM": 0.385,
+            "AUC_Judd": 0.714
+          },
+          "No_Spectral (-SR)": {
+            "NSS": 1.226,
+            "CC": 0.55,
+            "SIM": 0.474,
+            "AUC_Judd": 0.841
+          },
+          "No_LAB (-Color)": {
+            "NSS": 1.266,
+            "CC": 0.565,
+            "SIM": 0.483,
+            "AUC_Judd": 0.85
+          },
+          "No_Edge (-Edge)": {
+            "NSS": 1.195,
+            "CC": 0.539,
+            "SIM": 0.471,
+            "AUC_Judd": 0.832
+          },
+          "No_CenterBias (-Bias)": {
+            "NSS": 0.876,
+            "CC": 0.345,
+            "SIM": 0.433,
+            "AUC_Judd": 0.745
+          },
+          "No_Face (-YuNet)": {
+            "NSS": 1.208,
+            "CC": 0.541,
+            "SIM": 0.476,
+            "AUC_Judd": 0.837
+          },
+          "No_Objectness (-DoG)": {
+            "NSS": 1.24,
+            "CC": 0.556,
+            "SIM": 0.473,
+            "AUC_Judd": 0.851
+          }
+        },
+        "models_stats": {
+          "OptiSight_5Layer": {
+            "NSS": {
+              "mean": 1.249,
+              "std": 0.405,
+              "ci95": 0.102
+            },
+            "CC": {
+              "mean": 0.556,
+              "std": 0.119,
+              "ci95": 0.03
+            },
+            "SIM": {
+              "mean": 0.478,
+              "std": 0.132,
+              "ci95": 0.033
+            },
+            "AUC_Judd": {
+              "mean": 0.845,
+              "std": 0.082,
+              "ci95": 0.021
+            }
+          },
+          "OptiSight_ONNX_MSINet": {
+            "NSS": {
+              "mean": 0.346,
+              "std": 0.608,
+              "ci95": 0.154
+            },
+            "CC": {
+              "mean": 0.145,
+              "std": 0.215,
+              "ci95": 0.054
+            },
+            "SIM": {
+              "mean": 0.383,
+              "std": 0.115,
+              "ci95": 0.029
+            },
+            "AUC_Judd": {
+              "mean": 0.622,
+              "std": 0.176,
+              "ci95": 0.045
+            }
+          },
+          "OptiSight_Hybrid": {
+            "NSS": {
+              "mean": 1.185,
+              "std": 0.445,
+              "ci95": 0.113
+            },
+            "CC": {
+              "mean": 0.527,
+              "std": 0.133,
+              "ci95": 0.034
+            },
+            "SIM": {
+              "mean": 0.472,
+              "std": 0.131,
+              "ci95": 0.033
+            },
+            "AUC_Judd": {
+              "mean": 0.832,
+              "std": 0.095,
+              "ci95": 0.024
+            }
+          },
+          "OptiSight_Optimized": {
+            "NSS": {
+              "mean": 1.335,
+              "std": 0.42,
+              "ci95": 0.106
+            },
+            "CC": {
+              "mean": 0.59,
+              "std": 0.104,
+              "ci95": 0.026
+            },
+            "SIM": {
+              "mean": 0.485,
+              "std": 0.13,
+              "ci95": 0.033
+            },
+            "AUC_Judd": {
+              "mean": 0.853,
+              "std": 0.078,
+              "ci95": 0.02
+            }
+          },
+          "CenterBias_Baseline": {
+            "NSS": {
+              "mean": 1.014,
+              "std": 0.345,
+              "ci95": 0.087
+            },
+            "CC": {
+              "mean": 0.493,
+              "std": 0.146,
+              "ci95": 0.037
+            },
+            "SIM": {
+              "mean": 0.458,
+              "std": 0.14,
+              "ci95": 0.035
+            },
+            "AUC_Judd": {
+              "mean": 0.809,
+              "std": 0.093,
+              "ci95": 0.024
+            }
+          },
+          "IttiKoch_Baseline": {
+            "NSS": {
+              "mean": 0.741,
+              "std": 0.451,
+              "ci95": 0.114
+            },
+            "CC": {
+              "mean": 0.317,
+              "std": 0.163,
+              "ci95": 0.041
+            },
+            "SIM": {
+              "mean": 0.426,
+              "std": 0.117,
+              "ci95": 0.03
+            },
+            "AUC_Judd": {
+              "mean": 0.717,
+              "std": 0.123,
+              "ci95": 0.031
+            }
+          },
+          "SpectralResidual_Baseline": {
+            "NSS": {
+              "mean": 0.641,
+              "std": 0.443,
+              "ci95": 0.112
+            },
+            "CC": {
+              "mean": 0.239,
+              "std": 0.145,
+              "ci95": 0.037
+            },
+            "SIM": {
+              "mean": 0.385,
+              "std": 0.089,
+              "ci95": 0.022
+            },
+            "AUC_Judd": {
+              "mean": 0.714,
+              "std": 0.11,
+              "ci95": 0.028
+            }
+          },
+          "No_Spectral (-SR)": {
+            "NSS": {
+              "mean": 1.226,
+              "std": 0.404,
+              "ci95": 0.102
+            },
+            "CC": {
+              "mean": 0.55,
+              "std": 0.118,
+              "ci95": 0.03
+            },
+            "SIM": {
+              "mean": 0.474,
+              "std": 0.133,
+              "ci95": 0.034
+            },
+            "AUC_Judd": {
+              "mean": 0.841,
+              "std": 0.084,
+              "ci95": 0.021
+            }
+          },
+          "No_LAB (-Color)": {
+            "NSS": {
+              "mean": 1.266,
+              "std": 0.387,
+              "ci95": 0.098
+            },
+            "CC": {
+              "mean": 0.565,
+              "std": 0.111,
+              "ci95": 0.028
+            },
+            "SIM": {
+              "mean": 0.483,
+              "std": 0.131,
+              "ci95": 0.033
+            },
+            "AUC_Judd": {
+              "mean": 0.85,
+              "std": 0.076,
+              "ci95": 0.019
+            }
+          },
+          "No_Edge (-Edge)": {
+            "NSS": {
+              "mean": 1.195,
+              "std": 0.405,
+              "ci95": 0.103
+            },
+            "CC": {
+              "mean": 0.539,
+              "std": 0.122,
+              "ci95": 0.031
+            },
+            "SIM": {
+              "mean": 0.471,
+              "std": 0.134,
+              "ci95": 0.034
+            },
+            "AUC_Judd": {
+              "mean": 0.832,
+              "std": 0.09,
+              "ci95": 0.023
+            }
+          },
+          "No_CenterBias (-Bias)": {
+            "NSS": {
+              "mean": 0.876,
+              "std": 0.496,
+              "ci95": 0.125
+            },
+            "CC": {
+              "mean": 0.345,
+              "std": 0.168,
+              "ci95": 0.043
+            },
+            "SIM": {
+              "mean": 0.433,
+              "std": 0.113,
+              "ci95": 0.029
+            },
+            "AUC_Judd": {
+              "mean": 0.745,
+              "std": 0.111,
+              "ci95": 0.028
+            }
+          },
+          "No_Face (-YuNet)": {
+            "NSS": {
+              "mean": 1.208,
+              "std": 0.432,
+              "ci95": 0.109
+            },
+            "CC": {
+              "mean": 0.541,
+              "std": 0.137,
+              "ci95": 0.035
+            },
+            "SIM": {
+              "mean": 0.476,
+              "std": 0.133,
+              "ci95": 0.034
+            },
+            "AUC_Judd": {
+              "mean": 0.837,
+              "std": 0.091,
+              "ci95": 0.023
+            }
+          },
+          "No_Objectness (-DoG)": {
+            "NSS": {
+              "mean": 1.24,
+              "std": 0.335,
+              "ci95": 0.085
+            },
+            "CC": {
+              "mean": 0.556,
+              "std": 0.112,
+              "ci95": 0.028
+            },
+            "SIM": {
+              "mean": 0.473,
+              "std": 0.135,
+              "ci95": 0.034
+            },
+            "AUC_Judd": {
+              "mean": 0.851,
+              "std": 0.072,
+              "ci95": 0.018
+            }
+          }
+        },
+        "score_validation": {
+          "mean_overall_score": 41.68,
+          "std_overall_score": 5.03,
+          "corr_overall_score_vs_human_concentration_nss": 0.155,
+          "corr_focus_score_vs_human_concentration_nss": -0.017,
+          "corr_overall_score_vs_predicted_nss": 0.453,
+          "corr_overall_score_vs_predicted_auc": 0.454
+        }
+      }
+    }
+  },
+  "detector_benchmarks": {
+    "shelf_planogram_detector": {
+      "scenes_evaluated": 15,
+      "ground_truth_skus": 124,
+      "iou_threshold": 0.5,
+      "precision": 0.715,
+      "recall": 0.831,
+      "f1_score": 0.769,
+      "mean_matched_iou": 0.909
+    },
+    "morphological_text_cta_detector": {
+      "scenes_evaluated": 15,
+      "ground_truth_regions": 45,
+      "iou_threshold": 0.45,
+      "precision": 1.0,
+      "recall": 0.822,
+      "f1_score": 0.902,
+      "mean_matched_iou": 0.826
+    }
+  },
+  "synthetic_psychophysical_unit_test": {
+    "OptiSight_5Layer": {
+      "NSS": 2.218,
+      "CC": 0.423,
+      "SIM": 0.198,
+      "AUC_Judd": 0.918
+    },
+    "CenterBias_Baseline": {
+      "NSS": 1.427,
+      "CC": 0.312,
+      "SIM": 0.166,
+      "AUC_Judd": 0.885
+    },
+    "IttiKoch_Baseline": {
+      "NSS": 2.58,
+      "CC": 0.44,
+      "SIM": 0.336,
+      "AUC_Judd": 0.914
+    },
+    "SpectralResidual_Baseline": {
+      "NSS": 1.907,
+      "CC": 0.214,
+      "SIM": 0.202,
+      "AUC_Judd": 0.57
+    }
+  },
+  "onnx_model_card": {
+    "file": "assets/models/msinet_saliency_lite.onnx",
+    "size_kb": 197.8,
+    "architecture": "Lightweight Atrous Spatial Pyramid Pooling (ASPP dilation rates 1, 2, 4, 8) + 5-channel CoordConv spatial/chromatic input tensor (1x5x120x160)",
+    "parameter_initialization": "Analytically initialized multi-scale center-surround & spatial-prior convolutional filters exported via ONNX opset 13 (zero training-set or test-set data leakage; no benchmark images were used to fit ONNX weights)."
+  }
+}

@@ -1,0 +1,120 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optisight"
+version = "2.3.0"
+description = "Predictive Visual Saliency, Eye-Tracking Simulation & WCAG Legibility Analyzer for E-Commerce, Ad Creatives & Retail Packaging."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "murrer33" }
+]
+keywords = [
+    "saliency",
+    "eye-tracking",
+    "computer-vision",
+    "marketing",
+    "packaging",
+    "wcag",
+    "pyqt6",
+    "opencv",
+    "yunet"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Multimedia :: Graphics"
+]
+dependencies = [
+    "PyQt6>=6.5.0,<7.0.0",
+    "mss>=9.0.0,<11.0.0",
+    "numpy>=1.24.0,<3.0.0",
+    "opencv-python>=4.8.0,<5.0.0",
+    "Pillow>=10.0.0,<12.0.0",
+    "pynput>=1.7.6,<2.0.0"
+]
+
+[project.optional-dependencies]
+ocr = [
+    "rapidocr-onnxruntime>=1.3.0"
+]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0",
+    "black>=24.0.0",
+    "mypy>=1.10.0",
+    "pyinstaller>=6.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/murrer33/optisight"
+Repository = "https://github.com/murrer33/optisight.git"
+Issues = "https://github.com/murrer33/optisight/issues"
+
+[project.scripts]
+optisight = "main:main"
+
+[tool.setuptools]
+packages = ["core", "reports", "cli", "ui"]
+py-modules = ["main", "saliency_engine", "saliency_metrics"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.black]
+line-length = 110
+target-version = ["py310", "py311", "py312"]
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  \.git
+  | \.venv
+  | build
+  | dist
+  | benchmarks/datasets
+)/
+'''
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+exclude = [
+    ".git",
+    "build",
+    "dist",
+    "benchmarks/datasets",
+]
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E501", "E402"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_unused_ignores = false
+follow_imports = "silent"
+exclude = [
+    "build",
+    "dist",
+    "benchmarks/datasets",
+    "ui",
+]
+
+[[tool.mypy.overrides]]
+module = ["PyQt6", "PyQt6.*", "ui", "ui.*", "PIL", "PIL.*"]
+follow_imports = "skip"
+ignore_missing_imports = true
+ignore_errors = true

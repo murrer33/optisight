@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.spec
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Output reports & local benchmark datasets (excluded for repo hygiene & dataset licenses)
+*.png
+*.pdf
+!assets/demo_*.png
+benchmarks/datasets/
+benchmarks/case_studies/output/
+benchmarks/case_studies/*.png
+benchmarks/case_studies/*.pdf
+benchmarks/case_studies/*.zip
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
